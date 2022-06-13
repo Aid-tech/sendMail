@@ -1,0 +1,68 @@
+:root {
+  --bg-color: #fff;
+  --border-color: hsl(0, 0%, 83%);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.header, .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.header h3{
+  margin-top: 0;
+  color: #22B573;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.row {
+  float: left;
+  width: 300px;
+}
+
+.first{
+  margin-right: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+input, textarea {
+  width: 300px;
+  border-radius: 3px;
+  padding: 10px 5px;
+  border: 1px solid var(--border-color);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 75px;
+}
+
+button {
+  background: #fff;
+  border: 1px solid #0E9DCD;
+  padding: 10px;
+  border-radius: 5px;
+  color: #0E9DCD;
+}
+
+button:hover{
+  background: #0E9DCD;
+  color: #fff;
+}

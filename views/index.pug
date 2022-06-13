@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .content.container
+      header.header
+        img.logo(src="https://i1.wp.com/community.nodemailer.com/wp-content/uploads/2015/10/n2-2.png?fit=422%2C360&ssl=1", alt='', width="150", height="137")
+        h3 Send Mail
+        form#form.send-form
+          .row.first
+            input.name.form-control.input-sm(type='text', placeholder='Saisir votre nom et votre prénom')
+            input.mail.form-control.input-sm(type='email', placeholder='Saisir votre email')
+            input.phone.form-control.input-sm(type='text', placeholder='Saisir votre téléphone')
+          .row
+            input.subject.form-control.input-sm(type='text', placeholder='Saisir votre sujet')
+            textarea.message.form-control.input-sm(name='message' rows='4' placeholder='Saisir votre message')
+          .clear
+          .submit
+            button(type="submit")
+              i.fa-solid.fa-paper-plane.fa-2x
+  script(type="module" src="javascripts/sendMail.js")
